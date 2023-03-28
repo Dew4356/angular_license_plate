@@ -1,0 +1,129 @@
+:host {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::ng-deep .mat-tab-label {
+  background-color: #e5e5e5;
+  width: 100px;
+}
+
+::ng-deep .mat-tab-labels {
+  border-bottom: 2px solid black;
+}
+
+::ng-deep .mat-tab-label .mat-tab-label-content {
+  position: fixed;
+}
+
+/* Styles for the active tab label */
+::ng-deep .mat-tab-label.mat-tab-label-active {
+  padding: 5px;
+  background-color: #cfcfcf;
+  color: black;
+  font-weight: 700;
+}
+
+/* Styles for the ink bar */
+::ng-deep .mat-ink-bar {
+  background-color: transparent;
+}
+
+.banner {
+  background-image: url("../assets/Car_Parking.jpeg");
+  margin-top: 60px;
+  height: 30vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #1976d2;
+  color: white;
+  font-weight: 600;
+  z-index: 9;
+}
+
+.toolbar img {
+  margin: 0 16px;
+}
+
+.toolbar #twitter-logo {
+  height: 40px;
+  margin: 0 8px;
+}
+
+.toolbar #youtube-logo {
+  height: 40px;
+  margin: 0 16px;
+}
+
+.toolbar #twitter-logo:hover,
+.toolbar #youtube-logo:hover {
+  opacity: 0.8;
+}
+
+.card.card.highlight-card span {
+  margin-left: 60px;
+}
+
+.upload-block {
+  width: 100%;
+  border: 4px dotted #198754;
+  height: auto;
+  min-height: 400px;
+  border-radius: 4px;
+  margin: 15px 0 15px 0;
+  padding: 15px;
+}
+
+.preview-image {
+  max-width: 100%;
+  max-height: 300px;
+}
+
+.image-upload > input {
+  display: none;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+  .card-container > *:not(.circle-link),
+  .terminal {
+    width: 100%;
+  }
+
+  .card:not(.highlight-card) {
+    height: 16px;
+    margin: 8px 0;
+  }
+
+  .card.highlight-card span {
+    margin-left: 72px;
+  }
+
+  svg#rocket-smoke {
+    right: 120px;
+    transform: rotate(-5deg);
+  }
+}
+
+@media screen and (max-width: 575px) {
+  svg#rocket-smoke {
+    display: none;
+    visibility: hidden;
+  }
+}
